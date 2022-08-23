@@ -1,6 +1,6 @@
 # Geolocation Attendance Control
 
-[![License](https://poser.pugx.org/josantonius/wp-geolocation-attendance-control/license)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-9b59b6.svg)](LICENSE)
 
 **Traducciones**: [English](/README.md)
 

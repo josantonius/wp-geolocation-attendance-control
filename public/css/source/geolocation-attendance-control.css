@@ -1,0 +1,86 @@
+/**
+ * This file is part of https://github.com/josantonius/wp-geolocation-attendance-control repository.
+ *
+ * (c) Josantonius <hello@josantonius.dev>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+.gac-heading {
+  text-align: center;
+  color: #3f51b5;
+}
+
+.gac-first-heading,
+.gac-second-heading {
+  color: #3f51b5;
+}
+
+.gac-second-heading {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.opacity-on {
+  min-height: 1200px;
+  opacity: 0;
+}
+
+.opacity-off {
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  min-height: auto;
+}
+
+.v-text-field input {
+  border: none !important;
+  outline-style: unset !important;
+}
+
+.v-label {
+  font-weight: 400 !important;
+  z-index: 1;
+}
+
+.v-list__tile--link {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.v-list__tile--link:hover {
+  color: #3F51B5 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.v-menu__content {
+  margin-top: -176px;
+}
+
+@media screen and (max-width: 815px) {
+  .v-menu__content {
+    margin-top: -171px;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .v-menu__content {
+    margin-top: -185px;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .v-menu__content {
+    margin-top: -116px;
+  }
+}
+
+.geolocation-form {
+  min-height: 400px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2VvbG9jYXRpb24tYXR0ZW5kYW5jZS1jb250cm9sLmNzcyIsInNvdXJjZXMiOlsiZ2VvbG9jYXRpb24tYXR0ZW5kYW5jZS1jb250cm9sLnNhc3MiLCJsYXlvdXQvX2F0dGVuZGFuY2Vfc2hvcnRjb2RlLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OztHQVNHO0FDVEgsQUFBQSxZQUFZLENBQUM7RUFDWCxVQUFVLEVBQUUsTUFBTTtFQUNsQixLQUFLLEVBQUUsT0FBTztDQUFJOztBQUVwQixBQUFBLGtCQUFrQjtBQUNsQixBQUFBLG1CQUFtQixDQUFDO0VBQ2xCLEtBQUssRUFBRSxPQUFPO0NBQUk7O0FBRXBCLEFBQUEsbUJBQW1CLENBQUM7RUFDbEIsVUFBVSxFQUFFLEdBQUc7RUFDZixTQUFTLEVBQUUsSUFBSTtFQUNmLFdBQVcsRUFBRSxHQUFHO0NBQUk7O0FBRXRCLEFBQUEsV0FBVyxDQUFDO0VBQ1YsVUFBVSxFQUFFLE1BQU07RUFDbEIsT0FBTyxFQUFFLENBQUM7Q0FBSTs7QUFFaEIsQUFBQSxZQUFZLENBQUM7RUFDWCxVQUFVLEVBQUUsa0JBQWtCO0VBQzlCLE9BQU8sRUFBRSxDQUFDO0VBQ1YsVUFBVSxFQUFFLElBQUk7Q0FBSTs7QUFFdEIsQUFBYyxhQUFELENBQUMsS0FBSyxDQUFDO0VBQ2xCLE1BQU0sRUFBRSxlQUFlO0VBQ3ZCLGFBQWEsRUFBRSxnQkFBZ0I7Q0FBSTs7QUFFckMsQUFBQSxRQUFRLENBQUM7RUFDUCxXQUFXLEVBQUUsY0FBYztFQUMzQixPQUFPLEVBQUUsQ0FBQztDQUFJOztBQUVoQixBQUFBLG1CQUFtQixDQUFDO0VBQ2xCLFVBQVUsRUFBRSxlQUFlO0NBQUk7O0FBRWpDLEFBQUEsbUJBQW1CLEFBQUEsTUFBTSxDQUFDO0VBQ3hCLEtBQUssRUFBRSxrQkFBa0I7RUFDekIsVUFBVSxFQUFFLGVBQWU7Q0FBSTs7QUFFakMsQUFBQSxnQkFBZ0IsQ0FBQztFQUNmLFVBQVUsRUFBRSxNQUFNO0NBQUk7O0FBRXhCLE1BQU0sQ0FBQyxNQUFNLE1BQU0sU0FBUyxFQUFFLEtBQUs7RUFDakMsQUFBQSxnQkFBZ0IsQ0FBQztJQUNmLFVBQVUsRUFBRSxNQUFNO0dBQUk7OztBQUUxQixNQUFNLENBQUMsTUFBTSxNQUFNLFNBQVMsRUFBRSxLQUFLO0VBQ2pDLEFBQUEsZ0JBQWdCLENBQUM7SUFDZixVQUFVLEVBQUUsTUFBTTtHQUFJOzs7QUFFMUIsTUFBTSxDQUFDLE1BQU0sTUFBTSxTQUFTLEVBQUUsS0FBSztFQUNqQyxBQUFBLGdCQUFnQixDQUFDO0lBQ2YsVUFBVSxFQUFFLE1BQU07R0FBSTs7O0FBRTFCLEFBQUEsaUJBQWlCLENBQUM7RUFDaEIsVUFBVSxFQUFFLEtBQUs7Q0FBSSJ9 */
+
+/*# sourceMappingURL=geolocation-attendance-control.css.map */

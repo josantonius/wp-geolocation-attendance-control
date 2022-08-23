@@ -1,0 +1,225 @@
+/**
+ * This file is part of https://github.com/josantonius/wp-geolocation-attendance-control repository.
+ *
+ * (c) Josantonius <hello@josantonius.dev>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+html {
+  overflow-y: auto;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+
+.opacity-on {
+  min-height: 1200px;
+  opacity: 0;
+}
+
+.opacity-off {
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  min-height: auto;
+}
+
+.application--wrap {
+  background: #ECF0F1 !important;
+}
+
+#wpcontent {
+  background: #ECF0F1 !important;
+}
+
+#wpbody-content {
+  background: #ECF0F1 !important;
+}
+
+input.readonly, input[readonly], textarea.readonly, textarea[readonly] {
+  background-color: transparent !important;
+}
+
+/**
+ * Nav
+ */
+.gac-header-content {
+  padding: 18px !important;
+  margin-top: 0px !important;
+  line-height: 18px;
+}
+
+.gac-header-title {
+  color: #FFFFFF !important;
+  font-size: 28px !important;
+  font-weight: 300 !important;
+}
+
+@media (max-width: 504px) {
+  .gac-header-title {
+    font-size: 27px !important;
+  }
+}
+
+input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.v-text-field__slot > div {
+  width: 100%;
+}
+
+.v-select__slot > .v-label {
+  z-index: 1;
+}
+
+.theme--light.v-label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.switch-state {
+  margin-top: -16px;
+  position: absolute;
+  right: 5px;
+  display: block;
+  float: right;
+}
+
+/**
+ * Centres page
+ */
+.theme--light.v-btn-toggle .v-btn {
+  color: #3F51B5;
+}
+
+#wpbody {
+  position: inherit !important;
+}
+
+.v-menu__content {
+  margin-top: 2px;
+}
+
+.v-autocomplete__content {
+  margin-top: -31px;
+}
+
+@media screen and (min-width: 782px) {
+  #wpcontent {
+    height: 100%;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  #wpbody {
+    margin-left: -8px !important;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .v-autocomplete__content {
+    margin-top: -46px;
+    margin-left: -2px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .v-autocomplete__content {
+    margin-top: 0px;
+  }
+}
+
+.gac-heading {
+  text-align: center;
+  color: #3f51b5;
+}
+
+.gac-first-heading,
+.gac-second-heading {
+  color: #3f51b5;
+}
+
+.gac-second-heading {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.gac-content {
+  margin-left: 24px;
+}
+
+.gac-bodyContent {
+  text-align: center;
+}
+
+/**
+ * Footer
+ */
+#jst-footer {
+  background: #23282d !important;
+  margin-right: -20px !important;
+  margin-bottom: -20px !important;
+  margin-left: -20px !important;
+  margin-top: 10px !important;
+  display: none;
+}
+
+.mdl-mini-footer {
+  background: none !important;
+  padding: 10px 22px !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: #555d66;
+}
+
+.jst-made-with {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #636A73;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: inherit;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  margin: auto;
+}
+
+.jst-made-with a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.jst-made-with-icon {
+  padding: 1px 5px 0px 0px;
+  font-size: 20px !important;
+  color: #23282d;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.jst-fingerpoint {
+  color: #666;
+  margin-left: 2px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2VvbG9jYXRpb24tYXR0ZW5kYW5jZS1jb250cm9sLWFjdGl2aXRpZXMuY3NzIiwic291cmNlcyI6WyJnZW9sb2NhdGlvbi1hdHRlbmRhbmNlLWNvbnRyb2wtYWN0aXZpdGllcy5zYXNzIiwibGF5b3V0L19oZWFkZXIuc2FzcyIsInBhcnRpYWxzL19nbG9iYWwuc2FzcyIsInBhcnRpYWxzL19uYXYuc2FzcyIsInBhcnRpYWxzL19mb3JtLnNhc3MiLCJsYXlvdXQvX2FjdGl2aXRpZXNfcGFnZS5zYXNzIiwicGFydGlhbHMvX2FjdGl2aXRpZXNfZm9ybS5zYXNzIiwicGFydGlhbHMvX3dwX2FuZF92dWV0aWZ5X2NvbXBhdGliaWxpdHkuc2FzcyIsInBhcnRpYWxzL19tYXJrZXJzX2dvb2dsZV9tYXAuc2FzcyIsInBhcnRpYWxzL19kYXRhdGFibGUuc2FzcyIsImxheW91dC9fZm9vdGVyLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OztHQVNHO0FDVEg7O0dBRUc7QUNGSCxBQUFBLElBQUksQ0FBQztFQUNILFVBQVUsRUFBRSxJQUFJO0NBQUk7O0FBRXRCLEFBQ0UsQ0FERCxBQUNDLE1BQU8sRUFEVCxBQUNXLENBRFYsQUFDVSxPQUFRLEVBRG5CLEFBQ3FCLENBRHBCLEFBQ29CLE1BQU8sQ0FBQztFQUN6QixPQUFPLEVBQUUsSUFBSTtFQUNiLGFBQWEsRUFBRSxJQUFJO0VBQ25CLFVBQVUsRUFBRSxJQUFJO0VBQ2hCLFlBQVksRUFBRSxXQUFXO0NBQUk7O0FBRWpDLEFBQUEsV0FBVyxDQUFDO0VBQ1YsVUFBVSxFQUFFLE1BQU07RUFDbEIsT0FBTyxFQUFFLENBQUM7Q0FBSTs7QUFFaEIsQUFBQSxZQUFZLENBQUM7RUFDWCxVQUFVLEVBQUUsa0JBQWtCO0VBQzlCLE9BQU8sRUFBRSxDQUFDO0VBQ1YsVUFBVSxFQUFFLElBQUk7Q0FBSTs7QUFFdEIsQUFBQSxrQkFBa0IsQ0FBQztFQUNoQixVQUFVLEVBQUUsa0JBQWtCO0NBQUk7O0FBRXJD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 */
+
+/*# sourceMappingURL=geolocation-attendance-control-activities.css.map */

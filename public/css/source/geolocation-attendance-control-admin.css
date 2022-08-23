@@ -1,0 +1,133 @@
+/**
+ * This file is part of https://github.com/josantonius/wp-geolocation-attendance-control repository.
+ *
+ * (c) Josantonius <hello@josantonius.dev>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+html {
+  overflow-y: auto;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+
+/**
+ * Nav
+ */
+.gac-header-content {
+  padding: 18px !important;
+  margin-top: 0px !important;
+  line-height: 18px;
+}
+
+.gac-header-title {
+  color: #FFFFFF !important;
+  font-size: 28px !important;
+  font-weight: 300 !important;
+}
+
+@media (max-width: 504px) {
+  .gac-header-title {
+    font-size: 27px !important;
+  }
+}
+
+input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+/**
+ * Options page
+ */
+input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.gac-heading {
+  text-align: center;
+  color: #3f51b5;
+}
+
+.gac-first-heading,
+.gac-second-heading {
+  color: #3f51b5;
+}
+
+.gac-second-heading {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/**
+ * Footer
+ */
+#jst-footer {
+  background: #23282d !important;
+  margin-right: -20px !important;
+  margin-bottom: -20px !important;
+  margin-left: -20px !important;
+  margin-top: 10px !important;
+  display: none;
+}
+
+.mdl-mini-footer {
+  background: none !important;
+  padding: 10px 22px !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: #555d66;
+}
+
+.jst-made-with {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #636A73;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: inherit;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  margin: auto;
+}
+
+.jst-made-with a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.jst-made-with-icon {
+  padding: 1px 5px 0px 0px;
+  font-size: 20px !important;
+  color: #23282d;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.jst-fingerpoint {
+  color: #666;
+  margin-left: 2px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2VvbG9jYXRpb24tYXR0ZW5kYW5jZS1jb250cm9sLWFkbWluLmNzcyIsInNvdXJjZXMiOlsiZ2VvbG9jYXRpb24tYXR0ZW5kYW5jZS1jb250cm9sLWFkbWluLnNhc3MiLCJsYXlvdXQvX2hlYWRlci5zYXNzIiwicGFydGlhbHMvX2dsb2JhbC5zYXNzIiwicGFydGlhbHMvX25hdi5zYXNzIiwicGFydGlhbHMvX2Zvcm0uc2FzcyIsImxheW91dC9vcHRpb25zX3BhZ2Uuc2FzcyIsInBhcnRpYWxzL19tYXJrZXJzX2dvb2dsZV9tYXAuc2FzcyIsImxheW91dC9fZm9vdGVyLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OztHQVNHO0FDVEg7O0dBRUc7QUNGSCxBQUFBLElBQUksQ0FBQztFQUNILFVBQVUsRUFBRSxJQUFJO0NBQUk7O0FBRXRCLEFBQ0UsQ0FERCxBQUNDLE1BQU8sRUFEVCxBQUNXLENBRFYsQUFDVSxPQUFRLEVBRG5CLEFBQ3FCLENBRHBCLEFBQ29CLE1BQU8sQ0FBQztFQUN6QixPQUFPLEVBQUUsSUFBSTtFQUNiLGFBQWEsRUFBRSxJQUFJO0VBQ25CLFVBQVUsRUFBRSxJQUFJO0VBQ2hCLFlBQVksRUFBRSxXQUFXO0NBQUk7O0FDUmpDOztHQUVHO0FBQ0gsQUFBQSxtQkFBbUIsQ0FBQztFQUNsQixPQUFPLEVBQUUsZUFBZTtFQUN4QixVQUFVLEVBQUUsY0FBYztFQUMxQixXQUFXLEVBQUUsSUFBSTtDQUFJOztBQUV2QixBQUFBLGlCQUFpQixDQUFDO0VBQ2hCLEtBQUssRUFBRSxrQkFBa0I7RUFDekIsU0FBUyxFQUFFLGVBQWU7RUFDMUIsV0FBVyxFQUFFLGNBQWM7Q0FBSTs7QUFFakMsTUFBTSxFQUFFLFNBQVMsRUFBRSxLQUFLO0VBQ3RCLEFBQUEsaUJBQWlCLENBQUM7SUFDaEIsU0FBUyxFQUFFLGVBQWU7R0FBSTs7O0FDZGxDLEFBQUEsS0FBSyxDQUFDO0VBQ0osTUFBTSxFQUFFLGVBQWU7RUFDdkIsVUFBVSxFQUFFLGVBQWU7Q0FBSTs7QUNIakM7O0dBRUc7QURESCxBQUFBLEtBQUssQ0FBQztFQUNKLE1BQU0sRUFBRSxlQUFlO0VBQ3ZCLFVBQVUsRUFBRSxlQUFlO0NBQUk7O0FFSGpDLEFBQUEsWUFBWSxDQUFDO0VBQ1osVUFBVSxFQUFFLE1BQU07RUFDbEIsS0FBSyxFQUFFLE9BQU87Q0FBSTs7QUFFbkIsQUFBQSxrQkFBa0I7QUFDbEIsQUFBQSxtQkFBbUIsQ0FBQztFQUNuQixLQUFLLEVBQUUsT0FBTztDQUFJOztBQUVuQixBQUFBLG1CQUFtQixDQUFDO0VBQ25CLFVBQVUsRUFBRSxHQUFHO0VBQ2YsU0FBUyxFQUFFLElBQUk7RUFDZixXQUFXLEVBQUUsR0FBRztDQUFJOztBQ1hyQjs7R0FFRztBQUNILEFBQUEsV0FBVyxDQUFDO0VBQ1YsVUFBVSxFQUFFLE9BQWUsQ0FBQyxVQUFVO0VBQ3RDLFlBQVksRUFBRSxnQkFBZ0I7RUFDOUIsYUFBYSxFQUFFLGdCQUFnQjtFQUMvQixXQUFXLEVBQUUsZ0JBQWdCO0VBQzdCLFVBQVUsRUFBRSxlQUFlO0VBQzNCLE9BQU8sRUFBRSxJQUFJO0NBQUk7O0FBRW5CLEFBQUEsZ0JBQWdCLENBQUM7RUFDZixVQUFVLEVBQUUsZUFBZTtFQUMzQixPQUFPLEVBQUUsb0JBQW9CO0VBQzdCLFFBQVEsRUFBRSxRQUFRO0VBQ2xCLE1BQU0sRUFBRSxDQUFDO0VBQ1QsSUFBSSxFQUFFLENBQUM7RUFDUCxLQUFLLEVBQUUsQ0FBQztFQUNSLE9BQU8sRUFBRSxTQUFTO0VBQ2xCLEtBQUssRUFBRSxPQUFPO0NBQUk7O0FBRXBCLEFBQUEsY0FBYyxDQUFDO0VBQ2IsT0FBTyxFQUFFLFlBQVk7RUFDckIsT0FBTyxFQUFFLFdBQVc7RUFDcEIsT0FBTyxFQUFFLElBQUk7RUFDYixpQkFBaUIsRUFBRSxNQUFNO0VBQ3pCLGFBQWEsRUFBRSxNQUFNO0VBQ3JCLFNBQVMsRUFBRSxNQUFNO0VBQ2pCLEtBQUssRUFBRSxPQUFPO0VBQ2QsUUFBUSxFQUFFLFFBQVE7RUFDbEIsY0FBYyxFQUFFLEdBQUc7RUFDbkIsU0FBUyxFQUFFLE9BQU87RUFDbEIsbUJBQW1CLEVBQUUsTUFBTTtFQUMzQixjQUFjLEVBQUUsTUFBTTtFQUN0QixNQUFNLEVBQUUsSUFBSTtDQUdpQjs7QUFoQi9CLEFBY0UsY0FkWSxDQWNaLENBQUMsQ0FBQztFQUNBLFdBQVcsRUFBRSxHQUFHO0VBQ2hCLGVBQWUsRUFBRSxJQUFJO0NBQUk7O0FBRTdCLEFBQUEsbUJBQW1CLENBQUM7RUFDbEIsT0FBTyxFQUFFLGVBQWU7RUFDeEIsU0FBUyxFQUFFLGVBQWU7RUFDMUIsS0FBSyxFQUFFLE9BQU87Q0FBSTs7QUFFcEIsQUFBQSxVQUFVLENBQUM7RUFDVCxNQUFNLEVBQUUsT0FBTztDQUFJOztBQUVyQixBQUFBLGdCQUFnQixDQUFDO0VBQ2YsS0FBSyxFQUFFLElBQUk7RUFDWCxXQUFXLEVBQUUsR0FBRztDQUFJIn0= */
+
+/*# sourceMappingURL=geolocation-attendance-control-admin.css.map */

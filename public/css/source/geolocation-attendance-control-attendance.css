@@ -1,0 +1,174 @@
+/**
+ * This file is part of https://github.com/josantonius/wp-geolocation-attendance-control repository.
+ *
+ * (c) Josantonius <hello@josantonius.dev>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+html {
+  overflow-y: auto;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+
+.opacity-on {
+  min-height: 1200px;
+  opacity: 0;
+}
+
+.opacity-off {
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  min-height: auto;
+}
+
+.application--wrap {
+  background: #ECF0F1 !important;
+}
+
+#wpcontent {
+  background: #ECF0F1 !important;
+}
+
+#wpbody-content {
+  background: #ECF0F1 !important;
+}
+
+input.readonly, input[readonly], textarea.readonly, textarea[readonly] {
+  background-color: transparent !important;
+}
+
+/**
+ * Nav
+ */
+.gac-header-content {
+  padding: 18px !important;
+  margin-top: 0px !important;
+  line-height: 18px;
+}
+
+.gac-header-title {
+  color: #FFFFFF !important;
+  font-size: 28px !important;
+  font-weight: 300 !important;
+}
+
+@media (max-width: 504px) {
+  .gac-header-title {
+    font-size: 27px !important;
+  }
+}
+
+input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.v-text-field__slot > div {
+  width: 100%;
+}
+
+.v-select__slot > .v-label {
+  z-index: 1;
+}
+
+.theme--light.v-label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.switch-state {
+  margin-top: -16px;
+  position: absolute;
+  right: 5px;
+  display: block;
+  float: right;
+}
+
+.status-chip {
+  color: #fff !important;
+  height: 27px;
+}
+
+.date-selector-btn {
+  padding: 0.5px;
+  font-size: 23px;
+  margin: 0;
+  margin-top: -2px;
+}
+
+.headline-title {
+  margin-bottom: -15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/**
+ * Footer
+ */
+#jst-footer {
+  background: #23282d !important;
+  margin-right: -20px !important;
+  margin-bottom: -20px !important;
+  margin-left: -20px !important;
+  margin-top: 10px !important;
+  display: none;
+}
+
+.mdl-mini-footer {
+  background: none !important;
+  padding: 10px 22px !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: #555d66;
+}
+
+.jst-made-with {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #636A73;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: inherit;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  margin: auto;
+}
+
+.jst-made-with a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.jst-made-with-icon {
+  padding: 1px 5px 0px 0px;
+  font-size: 20px !important;
+  color: #23282d;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.jst-fingerpoint {
+  color: #666;
+  margin-left: 2px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2VvbG9jYXRpb24tYXR0ZW5kYW5jZS1jb250cm9sLWF0dGVuZGFuY2UuY3NzIiwic291cmNlcyI6WyJnZW9sb2NhdGlvbi1hdHRlbmRhbmNlLWNvbnRyb2wtYXR0ZW5kYW5jZS5zYXNzIiwibGF5b3V0L19oZWFkZXIuc2FzcyIsInBhcnRpYWxzL19nbG9iYWwuc2FzcyIsInBhcnRpYWxzL19uYXYuc2FzcyIsInBhcnRpYWxzL19mb3JtLnNhc3MiLCJsYXlvdXQvX2F0dGVuZGFuY2VzX3BhZ2Uuc2FzcyIsImxheW91dC9fZm9vdGVyLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OztHQVNHO0FDVEg7O0dBRUc7QUNGSCxBQUFBLElBQUksQ0FBQztFQUNILFVBQVUsRUFBRSxJQUFJO0NBQUk7O0FBRXRCLEFBQ0UsQ0FERCxBQUNDLE1BQU8sRUFEVCxBQUNXLENBRFYsQUFDVSxPQUFRLEVBRG5CLEFBQ3FCLENBRHBCLEFBQ29CLE1BQU8sQ0FBQztFQUN6QixPQUFPLEVBQUUsSUFBSTtFQUNiLGFBQWEsRUFBRSxJQUFJO0VBQ25CLFVBQVUsRUFBRSxJQUFJO0VBQ2hCLFlBQVksRUFBRSxXQUFXO0NBQUk7O0FBRWpDLEFBQUEsV0FBVyxDQUFDO0VBQ1YsVUFBVSxFQUFFLE1BQU07RUFDbEIsT0FBTyxFQUFFLENBQUM7Q0FBSTs7QUFFaEIsQUFBQSxZQUFZLENBQUM7RUFDWCxVQUFVLEVBQUUsa0JBQWtCO0VBQzlCLE9BQU8sRUFBRSxDQUFDO0VBQ1YsVUFBVSxFQUFFLElBQUk7Q0FBSTs7QUFFdEIsQUFBQSxrQkFBa0IsQ0FBQztFQUNoQixVQUFVLEVBQUUsa0JBQWtCO0NBQUk7O0FBRXJDLEFBQUEsVUFBVSxDQUFDO0VBQ1YsVUFBVSxFQUFFLGtCQUFrQjtDQUFJOztBQUVuQyxBQUFBLGVBQWUsQ0FBQztFQUNmLFVBQVUsRUFBRSxrQkFBa0I7Q0FBSTs7QUFFbkMsQUFBQSxLQUFLLEFBQUEsU0FBUyxFQUFFLEFBQUEsS0FBSyxDQUFBLEFB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 */
+
+/*# sourceMappingURL=geolocation-attendance-control-attendance.css.map */

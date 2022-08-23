@@ -17,6 +17,6 @@ plugins/
 components/
 public/css/min/*
 public/js/min/*
-geolocation-attendance-control.code-workspace
+wp-geolocation-attendance-control.code-workspace
 .vscode
 .repository.md

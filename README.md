@@ -32,7 +32,9 @@ For testing purposes, you can clone the entire repository in the WordPress plugi
 git clone https://github.com/josantonius/wp-geolocation-attendance-control.git
 ```
 
-And then add the `google_api_key` in the `config/setting.php` file.
+- Add the `google_api_key` in the `config/setting.php` file.
+
+- Create a page for attendance control and include the shortcode `[geolocation-attendance-control]`.
 
 ## Features
 

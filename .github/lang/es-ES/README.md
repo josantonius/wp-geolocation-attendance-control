@@ -33,7 +33,9 @@ A efectos de prueba, puedes clonar todo el repositorio en el directorio de plugi
 git clone https://github.com/josantonius/wp-geolocation-attendance-control.git
 ```
 
-Y luego añadir la `google_api_key` en el archivo `config/setting.php`.
+- Añadir la `google_api_key` en el archivo `config/setting.php`.
+
+- Crear una página para el control de asistencia e incluir el shortcode `geolocation-attendance-control`.
 
 ## Características
 
@@ -50,33 +52,33 @@ Y luego añadir la `google_api_key` en el archivo `config/setting.php`.
 
 ### Gestión de centros educativos
 
-![image](resources/back-education-centers.png)
-![image](resources/back-edit-education-center-1.png)
-![image](resources/back-edit-education-center-2.png)
-![image](resources/back-education-center-details.png)
+![image](/resources/back-education-centers.png)
+![image](/resources/back-edit-education-center-1.png)
+![image](/resources/back-edit-education-center-2.png)
+![image](/resources/back-education-center-details.png)
 
 ### Gestión de actividades extracurriculares
 
-![image](resources/back-activity-list.png)
-![image](resources/back-edit-activity.png)
+![image](/resources/back-activity-list.png)
+![image](/resources/back-edit-activity.png)
 
 ### Registros de asistencia
 
-![image](resources/back-attendance-list.png)
-![image](resources/back-remove-attendance.png)
-![image](resources/back-attendance-calendar.png)
-![image](resources/back-attendance-selection.png)
-![image](resources/back-attendance-csv.png)
+![image](/resources/back-attendance-list.png)
+![image](/resources/back-remove-attendance.png)
+![image](/resources/back-attendance-calendar.png)
+![image](/resources/back-attendance-selection.png)
+![image](/resources/back-attendance-csv.png)
 
 ### Control de asistencia
 
-![image](resources/front-checking.png)
+![image](/resources/front-checking.png)
 
 ### Avisos posteriores a la comprobación
 
-![image](resources/front-fail-hour.png)
-![image](resources/front-success-checking.png)
-![image](resources/front-fail-location.png)
+![image](/resources/front-fail-hour.png)
+![image](/resources/front-success-checking.png)
+![image](/resources/front-fail-location.png)
 
 ## Patrocinar
 
